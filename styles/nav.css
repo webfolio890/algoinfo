@@ -1,0 +1,147 @@
+
+nav{
+    margin: 0 0 0 0;
+    padding: 0;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    #desk-nav{
+        display: none;
+    }
+
+    #mob-nav-open{
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+    }
+    
+    #mob-nav-close{
+        display: block;
+    }
+    
+    .nav-container{
+        position: fixed;
+        background: black;
+        width: 100%;
+        height: 5em;
+    }
+    
+    #bigLogo-mob{
+        float: left;
+        width: 5em;
+        height: 5em;
+        background: white;
+    }
+    
+    img[alt='ham-menu']{
+        float: right;
+        margin-top: 2em;
+        margin-right: 5%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    img[alt='ham-menu']:hover{
+        outline: 2px white solid;
+    }
+    
+    .nav-link-container{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-link{
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: 2em;
+        padding: 1em 0 0 0;
+        margin-bottom: 2em;
+        background: black;
+        width: 60vw;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .nav-link:hover{
+        outline: 5px white solid;
+        outline-offset: 3px;
+    }
+    
+    .nav-click>img{
+        width: 1.5em;
+        height: 1.5em;
+        float: right;
+        margin: 20px 20px 0 0
+    }
+    
+    .nav-click>img:hover{
+        outline: 2px white solid;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    #desk-nav{
+        display: block;
+    }
+
+    #mob-nav-open{
+        display: none;
+    }
+    
+    #mob-nav-close{
+        display: none;
+    }
+
+    .nav-container{
+        position: fixed;
+        background: black;
+        width: 100%;
+        height: 6.9em;
+        z-index: 1;
+    }
+
+    #bigLogo{
+        float: left;
+        width: 7em;
+        height: 7em;
+        background: white;
+    }
+
+    .desk-nav-link-container{
+        position: fixed;
+        display: flex;
+        right: 0;
+        width: 60%;
+        margin-top: 3em;
+        height: fit-content;
+        justify-content: space-evenly;
+        z-index: 2;
+    }
+
+    .desk-link{
+        text-decoration: none;
+        color: white;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+        border-bottom: 4px white solid;
+        border-right: 4px white solid;
+        outline: 2px rgba(237, 237, 237, 0.17) solid;
+        z-index: 2;
+    }
+
+    .desk-link:hover{
+        color: white;
+        border-bottom: 2px white solid;
+        border-right: 2px white solid;
+        outline: none;
+        outline-offset: 3px;
+    }
+}

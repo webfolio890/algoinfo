@@ -1,0 +1,102 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+#Banner{
+    text-align: center;
+}
+
+#Banner>img{
+    width: 100%;
+    max-height: 50vh;
+}
+
+.center-sec{
+    text-align: center;
+}
+
+.book-img-link{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-link{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 5px;
+    text-align: center;
+}
+
+.img-link>img{
+    width: 100%;
+    height: 275px;
+}
+
+.img-link>a{
+    width: 100%;
+    height: 30px;
+    padding-top: 15px;
+    font-size: 1.3em;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    background: black;
+}
+
+.img-link>a:hover{
+    color: black;
+    background: white;
+    border: 2px black solid;
+}
+
+@media screen and (max-width: 768px){
+    #Banner>img{
+        min-height: 45vh;
+    }
+    .banner-info{
+        position: absolute;
+        margin: 1.5em 0 0 1.3em;
+        width: fit-content;
+        text-align: left;
+        color: white;
+        width: 175px;
+        padding: 5px;
+        font-size: 1.8em;
+        font-weight: 800;
+        background-color: rgb(0, 0, 0);
+    }
+    #xl-div{
+        height: 4.9em;
+    }
+}
+
+.l-divider{
+    height: 2em;
+}
+
+@media screen and (min-width: 769px){
+    .banner-info{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        text-align: justify;
+        padding: 20px;
+        color: white;
+        font-size: 4em;
+        font-weight: 800;
+        background-color: rgb(0, 0, 0);
+    }
+    #xl-div{
+        height: 6.9em;
+    }
+}

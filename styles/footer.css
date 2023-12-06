@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    background-color: black;
+}
+
+.quick-link-container{
+    color: white;
+    padding: 0.2em;
+    margin-left: 1em;
+}
+
+.quick-link-container>a{
+    color: white;
+    margin-right: 5px;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    height: fit-content;
+}
